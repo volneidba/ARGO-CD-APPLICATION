@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "ARGO-APP-2.fullname" . }}
+  name: {{ include "argo-app-2.fullname" . }}
   labels:
-    {{- include "ARGO-APP-2.labels" . | nindent 4 }}
+    {{- include "argo-app-2.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -12,4 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "ARGO-APP-2.selectorLabels" . | nindent 4 }}
+    {{- include "argo-app-2.selectorLabels" . | nindent 4 }}
