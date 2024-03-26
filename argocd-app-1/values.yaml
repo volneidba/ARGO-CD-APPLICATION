@@ -8,7 +8,7 @@ image:
   repository: volneidba/docker_image_portifolio
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "10"
+  tag: "2"
 
 imagePullSecrets: []
 nameOverride: ""
